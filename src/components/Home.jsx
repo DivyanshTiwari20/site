@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectList from './ProjectList';
 import BlogList from './BlogList';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Home() {
   return (

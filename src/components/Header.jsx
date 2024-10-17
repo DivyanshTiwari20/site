@@ -9,7 +9,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="#about">about</Nav.Link>
+            <Nav.Link href="#About">about</Nav.Link>
             <Nav.Link href="#blog">blog</Nav.Link>
             <Nav.Link href="#contact">contact</Nav.Link>
           </Nav>
