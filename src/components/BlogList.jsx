@@ -2,8 +2,8 @@ import React from 'react';
 
 function BlogList() {
   const blogs = [
-    { title: 'Understanding AI', date: 'Oct 5, 2023', link: 'https://vani.club' },
-    { title: 'Introduction to Fullstack Development', date: 'Sep 20, 2023', link: 'https://vani.club' },
+    { title: 'Installing linux subsystem for win11', date: 'Oct 5, 2024', link: 'https://dev.to/divyansh_tiwari/how-to-install-windows-subsystem-for-linux-wsl-and-run-the-ubuntu-subsystem-on-windows-using-the-terminal-4m88' },
+    { title: 'My personal blogs && some weird thoughs', date: 'Oct 17, 2024', link: 'https://medium.com/@tmadhuvijay1982' },
   ];
 
   return (
