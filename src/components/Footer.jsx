@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className=" container footer mt-auto py-3 ">
       <hr />
-      <Container className="d-flex justify-content-between align-items-center footer-content">
+      <Container className="d-flex justify-content-between align-items-center footer-content" >
         <span>Divyansh Tiwari</span>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/divyansh-tiwari-47b2082aa/" target='blank'><img src={linkedinIcon} alt="LinkedIn" style={{ width: '30px', height: '30px' }} /></a>

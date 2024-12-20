@@ -4,8 +4,12 @@ body {
   font-family: 'Fira Code', monospace;
   background-color: #121212;
   color: #ffffff;
+  font-size:1.3rem ;
 }
 
+.img{
+  border-radius :50%; 
+}
 .container {
   max-width: 800px;
   margin: 0 auto;

@@ -3,10 +3,12 @@ import ProjectList from './ProjectList';
 import BlogList from './BlogList';
 import { HashLink as Link } from 'react-router-hash-link';
 
+
 function Home() {
   return (
     <div className="container text-light">
       <section className="my-5">
+        <img src="src/assets/cat.jpg" alt="" style={{borderRadius:'50%', height:'9.9rem'}}/>
         <h1>hey there👋</h1>
         <p><hr />
         <br />
@@ -27,7 +29,7 @@ function Home() {
       <section className="my-5">
         <h2>Blogs</h2>
         <BlogList />
-      </section>
+      </section>z
     </div>
   );
 }
