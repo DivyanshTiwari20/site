@@ -2,13 +2,13 @@ import React from 'react';
 import ProjectList from './ProjectList';
 import BlogList from './BlogList';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import About from './About';
 function Home() {
   return (
     <div className="container text-light">
       <section className="my-5">
         <img 
-          src="./src/assets/cat.jpg" 
+          src="/cat.jpg" 
           
           alt="" 
           style={{borderRadius:'50%', height:'9.9rem'}}
