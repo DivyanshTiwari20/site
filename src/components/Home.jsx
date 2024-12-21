@@ -8,7 +8,8 @@ function Home() {
     <div className="container text-light">
       <section className="my-5">
         <img 
-          src="src/assets/cat.jpg" 
+          src="./src/assets/cat.jpg" 
+          
           alt="" 
           style={{borderRadius:'50%', height:'9.9rem'}}
         />
