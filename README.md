@@ -1,1 +1,1 @@
-it is my site 
+This is my portfolio site made in vite react.js
