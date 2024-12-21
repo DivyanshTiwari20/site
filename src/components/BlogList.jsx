@@ -8,9 +8,9 @@ function BlogList() {
   ];
 
   return (
-    <div className="row">
+    <div className="container">
       {blogs.map((blog, index) => (
-        <div className="col-md-12 mb-4 d-flex justify-content-between align-items-center blog-item" key={index}>
+        <div className="col-md-12 mb-4 my-5 d-flex justify-content-between align-items-center blog-item" key={index}>
           <h5 className="card-title">
             <a href={blog.link} target="_blank" rel="noopener noreferrer" className="text-light">
               {blog.title}
