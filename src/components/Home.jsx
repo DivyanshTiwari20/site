@@ -4,6 +4,7 @@ import BlogList from './BlogList';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
+
 function Home() {
   return (
     <div className="container text-light">
@@ -12,7 +13,7 @@ function Home() {
         <h1>hey there👋</h1>
         <p><hr />
         <br />
-          Hi I'm <strong >Divyansh Tiwari</strong>, a 20 y/o Tech enthusiast from India, crafting things for the internet using the technologies I know and learn new stuff everyday. I mostly work with <strong>Python && C </strong> as my coding language. Meanwhile I am comfortable with React, bootstrap, flask etc for Web dev also i know ML and other stuff too.
+          Hii I'm <strong >Divyansh Tiwari</strong>, a 20 y/o Tech enthusiast from India, crafting things for the internet using the technologies I know and learn new stuff everyday. I mostly work with <strong>Python && C </strong> as my coding language. Meanwhile I am comfortable with React, bootstrap, flask etc for Web dev also i know ML and other stuff too.
 
         </p>
         <p>
