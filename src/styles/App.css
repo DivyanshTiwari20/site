@@ -6,6 +6,22 @@ body {
   color: #ffffff;
   font-size:1.3rem ;
 }
+/* styles.css */
+
+/* Increase font size for the navbar brand */
+.navbar-brand {
+  font-size: 2rem; /* Adjust the size as needed */
+}
+
+/* Increase font size for all nav links */
+.nav-link {
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+/* Optional: Add styles for sticky effect */
+.navbar.sticky {
+  box-shadow: 0 4px 2px -2px gray; /* Add shadow when sticky */
+}
 
 .img{
   border-radius :50%; 

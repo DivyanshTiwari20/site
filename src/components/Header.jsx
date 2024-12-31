@@ -8,7 +8,7 @@ function Header() {
       <Container className="justify-content-between">
         <Navbar.Brand as={Link} to="/">Divyansh.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end ">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
             <Nav.Link as={Link} to="/about">about</Nav.Link>
             <Nav.Link as={Link} to="/blog">blog</Nav.Link>
