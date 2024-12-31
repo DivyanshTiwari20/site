@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 function Home() {
   return (
     <div className="container text-light">
-      <section className="my-5 text-center">
+      <section className="container my-5 text-center">
         <img
           src="/cat.jpg"
           alt="Profile"

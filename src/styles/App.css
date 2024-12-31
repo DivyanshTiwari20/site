@@ -5,6 +5,7 @@
 html, body {
   height: 100%; /* Ensure full height for body */
   margin: 0; /* Remove default margin */
+  background-color: #121212 !important;
 }
 
 body {
