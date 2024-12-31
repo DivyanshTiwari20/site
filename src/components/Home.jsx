@@ -10,7 +10,7 @@ function Home() {
         <img
           src="/cat.jpg"
           alt=""
-          style={{ borderRadius: "50%", height: "9.9rem" }}
+          style={{ borderRadius: "50%", height: "15rem" }}
         />
         <h1 className="my-4" >hey there👋</h1>
         <hr />
