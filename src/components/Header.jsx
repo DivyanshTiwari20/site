@@ -1,22 +1,37 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+  const location = useLocation();
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-      <Container className="justify-content-between">
-        <Navbar.Brand as={Link} to="/">Divyansh.</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav>
-            <Nav.Link as={Link} to="/about">about</Nav.Link>
-            <Nav.Link as={Link} to="/blog">blog</Nav.Link>
-            <Nav.Link as={Link} to="/contact">contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header className="custom-header">
+      <div className="header-container">
+        <Link to="/" className="header-brand">Divyansh.</Link>
+        <nav className="header-nav">
+          <Link 
+            to="/about" 
+            className={`header-link ${location.pathname === '/about' ? 'active' : ''}`}
+          >
+            About
+          </Link>
+          {' | '}
+          <Link 
+            to="/blog" 
+            className={`header-link ${location.pathname === '/blog' ? 'active' : ''}`}
+          >
+            Blog
+          </Link>
+          {/* {' | '}
+          <Link 
+            to="/contact" 
+            className={`header-link ${location.pathname === '/contact' ? 'active' : ''}`}
+          >
+            Contact
+          </Link> */}
+        </nav>
+      </div>
+    </header>
   );
 }
 

@@ -7,6 +7,7 @@ import About from './components/About'; // Import About component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogList from './components/BlogList';
 
+
 function App() {
   return (
     <Router>

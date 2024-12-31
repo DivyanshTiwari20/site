@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import '../styles/App.css';
 
 function BlogList() {
   const blogs = [
@@ -20,9 +21,7 @@ function BlogList() {
         </div>
       ))}
     </div>
-    
   );
-
 }
 
 export default BlogList;
