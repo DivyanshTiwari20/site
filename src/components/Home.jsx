@@ -17,14 +17,14 @@ const Project = ({ title, description, link, thumbnail }) => (
 function Home() {
   const projects = [
     {
-      title: "watchub",
-      description: "YouTube Team Collaboration, Direct Uploads, and AI Magic for Effortless Content Creation!",
-      thumbnail: "/api/placeholder/400/200" // Replace with actual image path
+      title: ".Edumate",
+      description: "Productive education platform for students.",
+      thumbnail: "/edumate.png" // Replace with actual image path
     },
     {
-      title: "tini.fyi",
-      description: "Generate Short Links Effortlessly for Simplified, Secure, and Ad-Free Sharing",
-      thumbnail: "/api/placeholder/400/200" // Replace with actual image path
+      title: "Q&Awithdocs",
+      description: "Generate responses to your questions using AI after uploading your docs.",
+      thumbnail: "/ragapp.png" // Replace with actual image path
     },
     {
       title: "suresh.lm",
