@@ -45,8 +45,7 @@ function Home() {
         <h1 className="mb-4">hey there👋</h1>
         <p className="mb-4">
           I'm Divyansh Tiwari, a 20 y/o fullstack engineer from India, crafting things for the
-          internet using the technologies I know and learn new stuff everyday. I mostly work with
-          javascript ecosystem and tools.
+          internet using the technologies I know and learn new stuff everyday. This is my little home of the internet!
         </p>
         {/* <p className="mb-5">
           Presently I'm working at <a href="#" className="text-decoration-none">Maxim AI</a> building framework for testing and monitoring AI

@@ -154,6 +154,82 @@ div {
   background-color: #121212;
 }
 
+/* Add these to your existing CSS file */
+
+/* Blog Styles */
+.blog-list {
+  margin-top: 2rem;
+}
+
+.blog-item {
+  margin-bottom: 2rem;
+}
+
+.blog-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.blog-link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.blog-date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* About Styles */
+section h3 {
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+section p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.8;
+}
+
+section strong {
+  color: #678cad;
+  font-weight: 600;
+}
+
+/* Common Styles */
+.container {
+  max-width: 800px !important;
+  padding: 0 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 1.2rem;
+  }
+  
+  .blog-date {
+    font-size: 0.9rem;
+  }
+  
+  section h3 {
+    font-size: 1.3rem;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .header-brand {
