@@ -1,34 +1,41 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+/**
+ * Header Component
+ * - Provides navigation for the website
+ * - Sticks to top of the page
+ * - Shows active page state
+ * - Maintains minimal design with proper spacing
+ */
 function Header() {
+  // Get current location for active link styling
   const location = useLocation();
 
   return (
+    // Custom header with sticky positioning
     <header className="custom-header">
       <div className="header-container">
-        <Link to="/" className="header-brand">Divyansh.</Link>
+        {/* Website brand/logo */}
+        <Link to="/" className="header-brand">
+          Divyansh.
+        </Link>
+        
+        {/* Navigation menu */}
         <nav className="header-nav">
           <Link 
             to="/about" 
             className={`header-link ${location.pathname === '/about' ? 'active' : ''}`}
           >
-            About
+            about
           </Link>
-          {' | '}
+          {' '} {/* Space between links */}
           <Link 
             to="/blog" 
             className={`header-link ${location.pathname === '/blog' ? 'active' : ''}`}
           >
-            Blog
+            blog
           </Link>
-          {/* {' | '}
-          <Link 
-            to="/contact" 
-            className={`header-link ${location.pathname === '/contact' ? 'active' : ''}`}
-          >
-            Contact
-          </Link> */}
         </nav>
       </div>
     </header>

@@ -1,57 +1,84 @@
 import React from "react";
 import ProjectList from "./ProjectList";
 import BlogList from "./BlogList";
-import { HashLink as Link } from "react-router-hash-link";
+
+const Project = ({ title, description, link }) => (
+  <div className="mb-4">
+    <a href={link} className="text-white text-decoration-none">
+      <h4>{title}</h4>
+      <p className="text-white-50">{description}</p>
+    </a>
+  </div>
+);
 
 function Home() {
+  const projects = [
+    {
+      title: "watchub",
+      description: "YouTube Team Collaboration, Direct Uploads, and AI Magic for Effortless Content Creation!"
+    },
+    {
+      title: "tini.fyi",
+      description: "Generate Short Links Effortlessly for Simplified, Secure, and Ad-Free Sharing"
+    },
+    {
+      title: "suresh.lm",
+      description: "Personal site - Showcase Your Work with Simplicity!"
+    },
+    {
+      title: "section.fyi",
+      description: "Build Free Custom Page with Multiple Links for Effortless Online Presence!"
+    },
+    {
+      title: "tools",
+      description: "Your All-in-One Toolbox with Image to base64, Domain Tools, IP Checker, and More!"
+    },
+    {
+      title: "gituser",
+      description: "Discover GitHub User and Organization Details with a Sleek Interface"
+    }
+  ];
+
   return (
-    <div className="container text-light">
-      <section className="container my-5 text-center">
-        <img
-          src="/cat.jpg"
-          alt="Profile"
-          style={{ borderRadius: "50%", height: "15rem" }}
-        />
-        <h1 className="my-4">Hey there👋</h1>
-        <hr />
-        <p className="my-5">
-          Hi, I'm <strong>Divyansh Tiwari</strong>, a 2nd year computer science
-          student from India, crafting things for the internet using the
-          technologies I know and learning new stuff every day. This is my home on the
-          internet...
-          <br />
-          I like to create projects that are fun and also help others. I am
-          comfortable with many technologies and consider myself an all-rounder with a good command of 
-          <strong> React.js, Node.js, MERN stack, full-stack development, ML,
-          RAG </strong> apps, etc. I have also created several projects like a film recommender
-          system, a face emotion detection model, and an AI medical chatbot named
-          "Swastya." Currently, I am creating a productive social media app for
-          students with AI integration.
+    <div className="container d-flex flex-column align-items-center" style={{ maxWidth: "800px" }}>
+      <section className="text-center my-5">
+        <h1 className="mb-4">hey there👋</h1>
+        <p className="mb-4">
+          I'm Divyansh Tiwari, a 20 y/o fullstack engineer from India, crafting things for the
+          internet using the technologies I know and learn new stuff everyday. I mostly work with
+          javascript ecosystem and tools.
         </p>
-        <br />
-        <h3>Languages:</h3>
-        <p>
-          I mainly work with <strong>Python, JavaScript, and C</strong> as my coding languages.
-          Meanwhile, I am comfortable with other technologies as well.
-        </p>
-        <br />
-        <h3>Career:</h3>
-        <p>
-          I have worked as a freelancer, creating and selling websites and landing
-          pages. I still do freelancing if I receive an order. I'm pursuing my B.Tech
-          in Computer Science with a specialization in cloud computing and AI,
-          while also trying to work as a freelancer. Simultaneously, I'm making projects that
-          excite me. I've participated in several <strong>hackathons</strong>, including the Build Fast with AI hackathon where I was in the top five teams. 
-          I have also pitched my <strong>startup idea</strong> in my college competition.
-        </p>
+        {/* <p className="mb-5">
+          Presently I'm working at <a href="#" className="text-decoration-none">Maxim AI</a> building framework for testing and monitoring AI
+          applications.
+        </p> */}
       </section>
-      <section className="my-5">
-        <h2>Projects</h2>
-        <ProjectList />
+
+      <section className="w-100 mb-5">
+        <h2 className="mb-4">Projects</h2>
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-6">
+              <Project {...project} />
+            </div>
+          ))}
+        </div>
       </section>
-      <section className="my-5">
-        <h2>Blogs</h2>
-        <BlogList />
+
+      <section className="w-100 mb-5">
+        <h2 className="mb-4">Blogs</h2>
+        <div className="mb-4">
+          <a href="#" className="text-white text-decoration-none">
+            <h4>I feel like I'm living in the Golden Era.</h4>
+            <p className="text-white-50">2024-02-11</p>
+          </a>
+        </div>
+        <div className="mb-4">
+          <a href="#" className="text-white text-decoration-none">
+            <h4>How Life is Going as a 20-Year-Old Non-CS Software Engineer</h4>
+            <p className="text-white-50">2024-02-03</p>
+          </a>
+        </div>
       </section>
     </div>
   );

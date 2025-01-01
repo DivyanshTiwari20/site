@@ -1,261 +1,187 @@
-/* Importing Google Fonts */
+/* Import Fira Code font for entire website */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
-/* Global Styles */
-html, body {
-  height: 100%; /* Ensure full height for body */
-  margin: 0; /* Remove default margin */
+/* Reset and ensure dark background */
+html, body, #root {
   background-color: #121212 !important;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+/* Global font settings */
+* {
   font-family: 'Fira Code', monospace;
-  background-color: #121212;
-  color: #ffffff;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: column; /* Use flexbox for layout */
 }
 
-/* blog */
-
-
-/* Main container for flexbox layout */
-.app-container {
-  flex: 1; /* Allow main content to grow */
-}
-
-/* Navbar Styles */
-.custom-navbar {
-  background-color: #121212; /* Set the desired background color */
-}
-
-.navbar-brand {
-  font-size: 2rem; /* Adjust the size as needed */
-}
-
-.nav-link {
-  font-size: 1.5rem; /* Adjust the size as needed */
-}
-
-/* Optional: Add styles for sticky effect */
-.navbar.sticky {
-  box-shadow: 0 4px 2px -2px gray; /* Add shadow when sticky */
-}
-
-/* Image Styles */
-.img {
-  border-radius: 50%; 
-}
-
-/* Container Styles */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Typography Styles */
-b, strong {
-  font-weight: bolder;
-  color: #678cad;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-}
-
-/* Link Styles */
-a {
-  color: #58a6ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Card Styles */
-.card {
-  background-color: #2a2a2a;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Badge Styles */
-.badge {
-  background-color: #58a6ff;
-  color: #ffffff;
-  padding: .25rem .5rem;
-  border-radius:9999px;
-  font-size:.75rem;
-}
-
-/* Header Styles */
-.header {
-    display: flex;
-    width:800px;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items:center;
-    padding:20px;
-}
-
-.title {
-    font-size:24px;
-    font-weight:bold;
-}
-
-/* Navigation Styles */
-.nav {
-    display:flex; /* Ensure nav is displayed as flex for horizontal alignment */
-}
-
-.nav-links {
-    list-style-type:none;
-    padding:0;
-}
-
-.nav-links li {
-    margin-left:auto; /* Align links to the right side */
-    margin-right:auto; /* Center the links if needed */
-}
-
-.link {
-    color:#ffffff;
-    text-decoration:none;
-    font-size:16px;
-}
-
-/* Content Styles */
-.content {
-    text-align:center;
-    margin-top:20px;
-}
-
-.content h1 {
-    font-size:36px;
-    margin-bottom:10px;
-}
-
-.content p {
-    font-size:18px;
-    line-height:1.6; /* Ensure good line spacing for readability */
-}
-
-/* Social Icons Styles */
-.social-icons a {
-    margin:0 8px; 
-    filter:invert(100%);
-}
-
-/* Footer Styles */
-/* Body and Container Setup */
+/* Base font sizes for different elements */
 body {
+  font-size: 1.3rem;
+  line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.app-container {
-  flex: 1 0 auto;
-}
-
-/* Footer Styles */
-.footer {
-  flex-shrink: 0;
-  position: sticky;
-  bottom: 0;
   background-color: #121212;
   color: #ffffff;
-  width: 100%;
+}
+
+/* Ensure dark background for app container */
+#root, 
+.app-container,
+main,
+.container {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Header specific styles */
+.custom-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #121212;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Container for header content */
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+}
+
+/* Brand/logo styling */
+.header-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header-brand:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Navigation section */
+.header-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Navigation links */
+.header-link {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.header-link:hover,
+.header-link.active {
+  color: #ffffff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Content font sizes and colors */
+.container {
+  background-color: #121212;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.container p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Footer styles */
+.footer {
+  flex-shrink: 0;
+  background-color: #121212;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+.social-links {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .social-links a {
   color: #ffffff;
   text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
 
 .social-links a:hover {
+  opacity: 1;
   text-decoration: none;
+  color: #ffffff;
 }
-/* Responsive Adjustments */
 
-/* Header Styles */
-.custom-header {
+.social-links span {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+/* Additional dark theme fixes */
+section, 
+article, 
+aside, 
+div {
   background-color: #121212;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 1rem 0;
 }
 
-.header-container {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-}
-
-.header-brand {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.header-brand:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.header-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.header-link:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.header-link.active {
-  color: #ffffff;
-}
-
-/* Mobile Styles */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .header-container {
-    width: 100%;
-    padding: 0 1rem;
-  }
-  
   .header-brand {
     font-size: 1.5rem;
   }
   
-  .header-link {
+  .header-nav {
     font-size: 1.2rem;
   }
-}
-
-/* Hide Scrollbars for All Browsers */
-*:root::-webkit-scrollbar { 
-    display:none; /* Chrome, Safari, and Opera */ 
-} 
-
-*:root { 
-    -ms-overflow-style:none; /* IE and Edge */ 
-    scrollbar-width:none; /* Firefox */ 
+  
+  .header-container {
+    padding: 0 1rem;
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+  }
+  
+  .container p {
+    font-size: 1.1rem;
+  }
+  
+  .social-links {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .footer {
+    padding: 1rem 0;
+  }
 }
