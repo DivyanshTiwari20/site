@@ -1,18 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function BlogList() {
+  const navigate = useNavigate(); // Hook to access navigation
   const blogs = [
     {
       title: 'Installing linux subsystem for win11',
       date: 'Oct 5, 2024',
-      link: 'https://dev.to/divyansh_tiwari/how-to-install-windows-subsystem-for-linux-wsl-and-run-the-ubuntu-subsystem-on-windows-using-the-terminal-4m88',
+      link: '/blog/1', // Update link to point to the route
       category: 'technical'
     },
     {
       title: 'My personal blogs && some weird thoughts',
       date: 'Oct 17, 2024',
       link: 'https://medium.com/@tmadhuvijay1982',
+      category: 'thought'
+    },
+    {
+      title: 'What if we create an quora for film enthusiast ?',
+      date: 'Jan 2, 2025',
+      link: '/blog/2', // Update link to point to the route
       category: 'thought'
     },
   ];
@@ -41,12 +49,16 @@ function BlogList() {
       return sortOrder === 'desc' ? dateB - dateA : dateA - dateB;
     });
 
+  const handleBlogClick = (link) => {
+    navigate(link); // Navigate to the blog detail page
+  };
+
   return (
     <div className="container d-flex flex-column justify-content-center min-vh-100">
       <header className={`blog-header ${isHeaderSticky ? 'sticky' : ''}`}>
-        <h1 className="mb-4">Blog Posts</h1>
+        <h1 className="mb-4 my-5">Blog Posts</h1>
         
-        <div className="category-filters">
+        <div className="category-filters fs-5 mb-4">
           {['all', 'technical', 'thought', 'edu'].map(category => (
             <button
               key={category}
@@ -58,7 +70,7 @@ function BlogList() {
           ))}
         </div>
 
-        <div className="search-container">
+        <div className="search-container fs-6 mb-4">
           <div className="search-box">
             <Search size={20} />
             <input
@@ -81,16 +93,15 @@ function BlogList() {
       </header>
 
       <section className="my-5">
-        <div className="blog-list">
+        <div className="blog-list my-3">
           {filteredAndSortedBlogs.map((blog, index) => (
             <article key={index} className="blog-item">
               <a 
-                href={blog.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => handleBlogClick(blog.link)} // Use onClick for navigation
                 className="blog-link"
+                style={{ cursor: "pointer" }} // Change cursor style for better UX
               >
-                <div className="blog-content">
+                <div className="blog-content fs-6 mb-4">
                   <h3 className="blog-title">{blog.title}</h3>
                   <p className="blog-date">{blog.date}</p>
                 </div>

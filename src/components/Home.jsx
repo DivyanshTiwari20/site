@@ -26,25 +26,25 @@ function Home() {
       description: "Generate responses to your questions using AI after uploading your docs.",
       thumbnail: "/ragapp.png" // Replace with actual image path
     },
-    {
-      title: "suresh.lm",
-      description: "Personal site - Showcase Your Work with Simplicity!",
-      thumbnail: "/api/placeholder/400/200" // Replace with actual image path
-    },
-    {
-      title: "section.fyi",
-      description: "Build Free Custom Page with Multiple Links for Effortless Online Presence!"
-    },
-    {
-      title: "tools",
-      description: "Your All-in-One Toolbox with Image to base64, Domain Tools, IP Checker, and More!",
-      thumbnail: "/api/placeholder/400/200" // Replace with actual image path
-    },
-    {
-      title: "gituser",
-      description: "Discover GitHub User and Organization Details with a Sleek Interface",
-      thumbnail: "/api/placeholder/400/200" // Replace with actual image path
-    }
+    // {
+    //   title: "suresh.lm",
+    //   description: "Personal site - Showcase Your Work with Simplicity!",
+    //   thumbnail: "/api/placeholder/400/200" // Replace with actual image path
+    // },
+    // {
+    //   title: "section.fyi",
+    //   description: "Build Free Custom Page with Multiple Links for Effortless Online Presence!"
+    // },
+    // {
+    //   title: "tools",
+    //   description: "Your All-in-One Toolbox with Image to base64, Domain Tools, IP Checker, and More!",
+    //   thumbnail: "/api/placeholder/400/200" // Replace with actual image path
+    // },
+    // {
+    //   title: "gituser",
+    //   description: "Discover GitHub User and Organization Details with a Sleek Interface",
+    //   thumbnail: "/api/placeholder/400/200" // Replace with actual image path
+    // }
   ];
 
   return (
