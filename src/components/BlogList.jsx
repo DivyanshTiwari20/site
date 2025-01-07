@@ -18,9 +18,27 @@ function BlogList() {
       category: 'thought'
     },
     {
-      title: 'What if we create an quora for film enthusiast ?',
+      title: 'What if we create an quora for film enthusiast?',
       date: 'Jan 2, 2025',
       link: '/blog/2', // Update link to point to the route
+      category: 'thought'
+    },
+    {
+      title: 'Getting ready for the GSOC 2025',
+      date: 'Jan 4, 2025',
+      link: '/blog/3', // Update link to point to the route
+      category: 'thought'
+    },
+    {
+      title: ' Tracking Progress of the GSOC 2025',
+      date: 'Jan 6, 2025',
+      link: '/blog/4', // Update link to point to the route
+      category: 'thought'
+    },
+    {
+      title: ' Workdown != Results',
+      date: 'Jan 6, 2025',
+      link: '/blog/5', // Update link to point to the route
       category: 'thought'
     },
   ];
@@ -59,7 +77,7 @@ function BlogList() {
         <h1 className="mb-4 my-5">Blog Posts</h1>
         
         <div className="category-filters fs-5 mb-4">
-          {['all', 'technical', 'thought', 'edu'].map(category => (
+          {['all', 'technical', 'thought', ].map(category => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
