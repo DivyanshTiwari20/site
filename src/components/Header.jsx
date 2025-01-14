@@ -18,7 +18,7 @@ function Header() {
       <div className="header-container">
         {/* Website brand/logo */}
         <Link to="/" className="header-brand">
-          Divyansh.
+          DIVYANSH.
         </Link>
         
         {/* Navigation menu */}
@@ -27,14 +27,14 @@ function Header() {
             to="/about" 
             className={`header-link ${location.pathname === '/about' ? 'active' : ''}`}
           >
-            about
+            ABOUT
           </Link>
           {' '} {/* Space between links */}
           <Link 
             to="/blog" 
             className={`header-link ${location.pathname === '/blog' ? 'active' : ''}`}
           >
-            blog
+            BLOG
           </Link>
         </nav>
       </div>

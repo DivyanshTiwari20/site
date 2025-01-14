@@ -39,8 +39,8 @@ main,
   top: 0;
   z-index: 1000;
   background-color: #121212;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0;
+  /* border-bottom: 3px solid rgba(255, 255, 255, 0.1); */
 }
 
 /* Container for header content */
