@@ -12,12 +12,6 @@ function BlogList() {
       category: 'technical'
     },
     {
-      title: 'My personal blogs && some weird thoughts',
-      date: 'Oct 17, 2024',
-      link: 'https://medium.com/@tmadhuvijay1982',
-      category: 'thought'
-    },
-    {
       title: 'What if we create an quora for film enthusiast?',
       date: 'Jan 2, 2025',
       link: '/blog/2', // Update link to point to the route
@@ -72,11 +66,11 @@ function BlogList() {
   };
 
   return (
-    <div className="container d-flex flex-column justify-content-center min-vh-100">
+    <div className="container d-flex flex-column justify-content-center min-vh-100 my-3">
       <header className={`blog-header ${isHeaderSticky ? 'sticky' : ''}`}>
-        <h1 className="mb-4 my-5">Blog Posts</h1>
+        {/* <h1 className="mb-4 my-5">Blog Posts</h1> */}
         
-        <div className="category-filters fs-5 mb-4">
+        <div className="category-filters fs-5 mb-4 my-5">
           {['all', 'technical', 'thought', ].map(category => (
             <button
               key={category}
@@ -110,10 +104,10 @@ function BlogList() {
         </div>
       </header>
 
-      <section className="my-5">
+      <section className="my-3">
         <div className="blog-list my-3">
           {filteredAndSortedBlogs.map((blog, index) => (
-            <article key={index} className="blog-item">
+            <article key={index} className="blog-item my-1">
               <a 
                 onClick={() => handleBlogClick(blog.link)} // Use onClick for navigation
                 className="blog-link"
