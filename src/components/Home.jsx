@@ -6,7 +6,7 @@ import { Link, useLocation , Navigate} from 'react-router-dom';
 
 const Project = ({ title, description, link, thumbnail }) => (
   <div className="project-card mb-4">
-    <a href={link} className="text-white text-decoration-none">
+    <a href={link} target="blank" className="text-white text-decoration-none">
       <div className="project-thumbnail">
         <img src={thumbnail || "/api/placeholder/400/200"} alt={title} />
       </div>
@@ -21,17 +21,20 @@ function Home() {
     {
       title: ".Edumate",
       description: "Productive education platform for students.",
-      thumbnail: "/edumate.png" // Replace with actual image path
+      thumbnail: "/edumate.png", // Replace with actual image path
+      link:"https://edumate-xygy.vercel.app/"
     },
     {
       title: "Q&Awithdocs",
       description: "Get personalize Answere by uploading your docs.",
-      thumbnail: "/ragapp.png" // Replace with actual image path
+      thumbnail: "/ragapp.png", // Replace with actual image path
+      link:"https://qnawithdocs.streamlit.app/"
     },
     {
       title: "chatapp",
       description: "Personal chatRoom - An chatapp using MERN stack!",
-      thumbnail: "/chatapp.png" 
+      thumbnail: "/chatapp.png",
+      link:"https://chatapp-8tu8.onrender.com/" 
     },
     
   ];
