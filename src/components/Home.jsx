@@ -23,14 +23,14 @@ function Home() {
     },
     {
       title: "Q&Awithdocs",
-      description: "Generate responses to your questions using AI after uploading your docs.",
+      description: "Get personalize Answere by uploading your docs.",
       thumbnail: "/ragapp.png" // Replace with actual image path
     },
-    // {
-    //   title: "suresh.lm",
-    //   description: "Personal site - Showcase Your Work with Simplicity!",
-    //   thumbnail: "/api/placeholder/400/200" // Replace with actual image path
-    // },
+    {
+      title: "chatapp",
+      description: "Personal chatRoom - An chatapp using MERN stack!",
+      thumbnail: "/chatapp.png" // Replace with actual image path
+    },
     // {
     //   title: "section.fyi",
     //   description: "Build Free Custom Page with Multiple Links for Effortless Online Presence!"
@@ -77,14 +77,14 @@ function Home() {
         <h2 className="mb-4">Blogs</h2>
         <div className="mb-4">
           <a href="#" className="text-white text-decoration-none">
-            <h4>I feel like I'm living in the Golden Era.</h4>
-            <p className="text-white-50">2024-02-11</p>
+            <h4>Getting ready for the GSOC 2025.</h4>
+            <p className="text-white-50">2025-01-06</p>
           </a>
         </div>
         <div className="mb-4">
           <a href="#" className="text-white text-decoration-none">
-            <h4>How Life is Going as a 20-Year-Old Non-CS Software Engineer</h4>
-            <p className="text-white-50">2024-02-03</p>
+            <h4>Are AI agents gonna be the future?</h4>
+            <p className="text-white-50">2025-01-15</p>
           </a>
         </div>
       </section>
