@@ -1,22 +1,61 @@
-import React from 'react';
+import React from "react";
 
 function About() {
   return (
     <div className="container d-flex flex-column justify-content-center min-vh-100">
-      <section className="my-5">
-      <img src="/cat.jpg" alt="Your Name" className="img-fluid rounded-circle mb-3" style={{width: '200px', height: '200px'}} />
-        <h1 className="mb-4">About Me</h1>
+      <section className="my-5 ">
+        <img
+          src="/cat.jpg"
+          alt="Your Name"
+          className="img-fluid rounded-circle mb-5 text-center"
+          style={{ width: "200px", height: "200px" }}
+        />
+        {/* <h1 className="mb-4">About Me</h1> */}
         <p>
-          I'm computer science student in Lucknow. I start learning about computer 
-          since my 8th grade then thought of becoming an engineer so I give JEE 
-          entrance exam and failed. Currently, i am completing my B.Tech 
-          simultaneously making amazing open source projects.
+          I'm Divyansh Tiwari, a Computer Science undergraduate based in
+          Lucknow, combining academic excellence with hands-on project
+          development and freelance work. As a full-stack developer and machine
+          learning enthusiast, I thrive on building solutions that matter.
         </p>
-        
-        <h3 className="mt-5 mb-4">💻 What I Do:</h3>
+
+        <h4 className="mt-5 mb-4">My Technical Arsenal:</h4>
         <p>
-          I like to code in <strong>python</strong> and <strong>C</strong> as my 
-          primary coding languages.
+        <ul>
+          <li>Full Stack Development: MERN Stack (MongoDB, Express.js, React.js,
+          Node.js), JavaScript </li>
+          <li>Programming Languages: Python, C, JavaScript</li>
+          <li>AI/ML: Experience with RAG applications, LLM fine-tuning, emotion
+          detection models </li>
+          <li>Tools & Technologies: Git, Linux, UI/UX Design,
+          Gemini API integration</li>
+          </ul>
+        </p>
+        <h4 className="mt-5 mb-4">Notable Projects:</h4>
+        <p>
+        <ul>
+          <li>Edumate: Developed an AI-powered educational chatbot providing mental health support and study resources.</li>
+          <li>Swastya: Created a medical chatbot for health-related queries.</li>
+          <li>Zero to Python: Curated a comprehensive GitHub repository with 100+ programming challenges spanning competitive programming, ML, and DSA.</li>
+          <li>Real-time Emotion Detection System: Built using machine learning for facial expression analysis.</li>
+          <li>Multiple RAG (Retrieval-Augmented Generation) Applications: For document analysis and Q&A.
+          </li>
+          </ul>
+        </p>
+        <h4 className="mt-5 mb-4">Achievements:</h4>
+        <p>
+        <ul>
+          <li>Proudly placed in the top 20 at the "Build Fast with AI" hackathon.</li>
+          <li>Participated in Web3 hackathons including Gaia and Neo.</li>
+          <li>Currently exploring opportunities in Google Summer of Code while taking on freelance projects in web development and ML solutions.</li>
+          </ul>
+        </p>
+        <h4 className="mt-5 mb-4">Communication Skills :</h4>
+        <p>
+        As a bilingual professional fluent in Hindi and English, I combine technical expertise with strong communication skills. I regularly share insights through my technical and personal blogs.
+        </p>
+        <h4 className="mt-5 mb-4">Interests:</h4>
+        <p>
+        As I'm passionate about low-level programming, machine learning, and creating solutions that address real-world challenges. I'm looking to connect with fellow developers, potential clients for freelance work, and technology enthusiasts. Open to remote opportunities and collaborative projects in full-stack development, ML/AI, data science, and also something out of my comfort zone.
         </p>
       </section>
     </div>
