@@ -21,18 +21,24 @@ function BlogList() {
       title: 'Getting ready for the GSOC 2025',
       date: 'Jan 4, 2025',
       link: '/blog/3', // Update link to point to the route
-      category: 'thought'
+      category: 'Personal'
     },
     {
       title: ' Tracking Progress of the GSOC 2025',
       date: 'Jan 6, 2025',
       link: '/blog/4', // Update link to point to the route
-      category: 'thought'
+      category: 'Personal'
     },
     {
       title: ' Workdown != Results',
       date: 'Jan 6, 2025',
       link: '/blog/5', // Update link to point to the route
+      category: 'thought'
+    },
+    {
+      title: '  Difference between top 10% and top 1%',
+      date: 'Jan 26, 2025',
+      link: '/blog/6', // Update link to point to the route
       category: 'thought'
     },
   ];
@@ -71,7 +77,7 @@ function BlogList() {
         {/* <h1 className="mb-4 my-5">Blog Posts</h1> */}
         
         <div className="category-filters fs-5 mb-4 my-5">
-          {['all', 'technical', 'thought', ].map(category => (
+          {['all', 'technical', 'thought', 'Personal'].map(category => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}

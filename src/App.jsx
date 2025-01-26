@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
-import Footer from './components/Footer';
 import About from './components/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogList from './components/BlogList';
@@ -26,7 +25,6 @@ function App() {
           <Route path="/blog/4" element={<Blog4 />} /> {/* Updated route */}
           <Route path="/blog/5" element={<Blog5 />} /> {/* Updated route */}
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

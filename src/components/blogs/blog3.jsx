@@ -10,7 +10,7 @@ const Blog3 = () => {
 
         <div className="meta-info mb-4">
           <span className="date">Jan 4, 2025</span>
-          <span className="category ms-3 badge bg-primary">Thought</span>
+          <span className="category ms-3 badge bg-primary">Personal</span>
         </div>
 
         <div className="blog-content">
