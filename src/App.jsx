@@ -9,6 +9,7 @@ import Blog2 from './components/blogs/blog2'; // Updated import to match actual 
 import Blog3 from './components/blogs/blog3'; // Updated import to match actual file name
 import Blog4 from './components/blogs/blog4'; // Updated import to match actual file name
 import Blog5 from './components/blogs/blog5'; // Updated import to match actual file name
+import Blog8 from './components/blogs/blog8'; // Updated import to match actual file name
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/blog/3" element={<Blog3 />} /> {/* Updated route */}
           <Route path="/blog/4" element={<Blog4 />} /> {/* Updated route */}
           <Route path="/blog/5" element={<Blog5 />} /> {/* Updated route */}
+          <Route path="/blog/8" element={<Blog8 />} /> {/* Updated route */}
         </Routes>
       </div>
     </Router>

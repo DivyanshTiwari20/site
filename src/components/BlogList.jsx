@@ -41,6 +41,12 @@ function BlogList() {
       link: '/blog/6', // Update link to point to the route
       category: 'thought'
     },
+    {
+      title: 'Creating an app for my college',
+      date: 'Feb 22, 2025',
+      link: '/blog/8', // Update link to point to the route
+      category: 'Personal'
+    },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('all');
